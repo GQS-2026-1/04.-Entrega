@@ -1,4 +1,4 @@
-# 04.-Entrega
+# 04. Entrega
 
 Grupo1: Victor Dias ([@vhdtv](https://github.com/vhdtv))
  
