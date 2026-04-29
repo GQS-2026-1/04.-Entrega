@@ -7,7 +7,7 @@ import unagqs.excecoes.ValorInvalidoException;
 public abstract class Conta {
     private int numero;
     private Cliente titular;
-    private BigDecimal saldo;
+    protected BigDecimal saldo;
 
     Conta() {
         this.definirSaldo(new BigDecimal(0));
@@ -45,9 +45,9 @@ public abstract class Conta {
         this.definirSaldo(saldoAtualizado);
     }
 
-    abstract public void saque(BigDecimal valor) throws ValorInvalidoException;
+    abstract public BigDecimal saque(BigDecimal valor) throws ValorInvalidoException;
 
-    private void definirSaldo(BigDecimal valor) {
+    protected void definirSaldo(BigDecimal valor) {
         this.saldo = valor;
     }
 
