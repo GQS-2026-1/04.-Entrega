@@ -11,10 +11,10 @@ public class Cliente {
     private String cpf;
     private List<Conta> contas;
 
-    Cliente() {
+    public Cliente() {
         this.generateId();
     }
-    Cliente(String _nome, String cpf) throws NomeEmBrancoException {
+    public Cliente(String _nome, String cpf) throws NomeEmBrancoException {
         this.setNome(nome);
         this.generateId();
         this.setCPF(cpf);
@@ -22,6 +22,10 @@ public class Cliente {
 
     public void generateId() {
         this.id = UUID.randomUUID();
+    }
+
+    public UUID obterId() {
+        return this.id;
     }
 
     public void setCPF(String _cpf) {

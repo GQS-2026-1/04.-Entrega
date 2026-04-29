@@ -9,11 +9,11 @@ public abstract class Conta {
     private Cliente titular;
     protected BigDecimal saldo;
 
-    Conta() {
+    public Conta() {
         this.definirSaldo(new BigDecimal(0));
     }
 
-    Conta(int _numero) {
+    public Conta(int _numero) {
         this.definirSaldo(new BigDecimal(0));
         this.definirNumero(_numero);
     }
