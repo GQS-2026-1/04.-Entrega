@@ -1,4 +1,4 @@
-package unagqs.suite;
+package unagqs.servico;
 
 public class BancoAllTestsSuite {
     
