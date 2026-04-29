@@ -1,8 +1,8 @@
 package banco.excecoes;
 
-public class ClienteNaoEncontradoException extends RuntimeException {
+public class ContaNaoEncontradaException extends RuntimeException {
 
-    public ClienteNaoEncontradoException(String mensagem) {
+    public ContaNaoEncontradaException(String mensagem) {
         super(mensagem);
     }
 }
