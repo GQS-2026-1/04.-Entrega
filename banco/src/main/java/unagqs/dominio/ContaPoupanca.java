@@ -6,6 +6,14 @@ import unagqs.excecoes.ValorInvalidoException;
 
 public class ContaPoupanca extends Conta {
 
+    public ContaPoupanca() {
+        super();
+    }
+
+    public ContaPoupanca(int _numero) {
+        super(_numero);
+    }
+
     @Override
     public BigDecimal saque(BigDecimal valor) throws ValorInvalidoException {
        boolean valorInferiorAoAceito = valor.compareTo(new BigDecimal(0)) < 0;
