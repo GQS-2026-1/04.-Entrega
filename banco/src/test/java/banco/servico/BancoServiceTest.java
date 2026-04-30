@@ -50,7 +50,7 @@ public class BancoServiceTest {
 
     @Test
     void deveCadastrarEBuscarContaPorNumero() {
-        Cliente cliente = new Cliente("Henrique", "12345678901");
+        Cliente cliente = new Cliente("Cleiton", "12345678901");
         Conta conta = new ContaCorrente("12345", cliente, BigDecimal.valueOf(100));
 
         bancoService.cadastrarConta(conta);
