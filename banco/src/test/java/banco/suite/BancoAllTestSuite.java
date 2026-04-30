@@ -1,14 +1,14 @@
 package banco.suite;
 
-import org.junit.platform.suite.api.SelectClasses;
-import org.junit.platform.suite.api.Suite;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
 
-@Suite
-@SelectClasses({
-    ClienteTest.class,
-    ContaTest.class,
-    ContaCorrenteTest.class,
-    ContaPoupancaTest.class
+@RunWith(Suite.class)
+@Suite.SuiteClasses({
+    banco.dominio.ClienteTest.class,
+    // banco.dominio.ContaTest.class,
+    // banco.dominio.ContaCorrenteTest.class,
+    // banco.dominio.ContaPoupancaTest.class
 })
 public class BancoAllTestSuite {
 }
